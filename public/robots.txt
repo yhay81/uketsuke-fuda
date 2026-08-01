@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /board
+Disallow: /f/
+Disallow: /m/
+
+Sitemap: https://uketsuke-fuda.yhay81.com/sitemap.xml

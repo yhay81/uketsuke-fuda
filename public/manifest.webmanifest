@@ -1,0 +1,16 @@
+{
+  "name": "受付札",
+  "short_name": "受付札",
+  "description": "ライブと小さなイベントの取り置き予約を集め、当日の受付名簿へつなぐ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f0e7",
+  "theme_color": "#17241f",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
