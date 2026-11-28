@@ -15,8 +15,21 @@ jobs:
         with:
           node-version: "24"
           cache: true
+          run-install: false
       - run: vp install --frozen-lockfile
       - run: npm run release:check
       - run: npm run check
-      - run: npm test
       - run: npm run build
+
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - uses: actions/checkout@v6
+      - uses: voidzero-dev/setup-vp@v1
+        with:
+          node-version: "24"
+          cache: true
+          run-install: false
+      - run: vp install --frozen-lockfile
+      - run: npm test
